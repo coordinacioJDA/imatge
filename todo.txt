@@ -1,0 +1,2 @@
+(1) Temes grups alumnes per poder accedir com a sudoers
+(2)

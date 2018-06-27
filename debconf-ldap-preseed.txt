@@ -1,0 +1,11 @@
+libnss-ldapd:amd64	libnss-ldapd/clean_nsswitch	boolean	false
+libnss-ldapd:amd64	libnss-ldapd/nsswitch	multiselect	passwd, group, shadow
+libnss-ldapd	libnss-ldapd/clean_nsswitch	boolean	false
+libnss-ldapd	libnss-ldapd/nsswitch	multiselect	passwd, group, shadow
+ldap-auth-config    ldap-auth-config/ldapns/ldap-server    string    ldap://192.168.0.16
+ldap-auth-config    ldap-auth-config/ldapns/base-dn    string     dc=jda,dc=ins
+ldap-auth-config    ldap-auth-config/ldapns/ldap_version    select    3 
+ldap-auth-config    ldap-auth-config/dbrootlogin    boolean    false 
+ldap-auth-config    ldap-auth-config/dblogin    boolean    false 
+nslcd   nslcd/ldap-uris string  ldap://192.168.0.16 
+nslcd   nslcd/ldap-base string  dc=jda,dc=ins
