@@ -13,7 +13,7 @@ apt-get install -y  codeblocks dia epoptes-client fritzing dmidecode libxml-simp
 apt-get install -y  libnet-ip-perl libwww-perl libdigest-md5-perl libnet-ssleay-perl  libcrypt-ssleay-perl libnet-snmp-perl libproc-pid-file-perl libproc-daemon-perl
 apt-get install -y  net-tools libsys-syslog-perl pciutils smartmontools read-edid nmap  geany gimp
 apt-get install -y  inkscape keymon mingw32 nmap shutter vim-gnome rst2pdf scribus ntp
-apt-get install -y  python-virtualenv byobu virtualbox git kdenlive kexi
+apt-get install -y  python-virtualenv byobu virtualbox git kdenlive kexi python-pip
 
 ##PacketTracer
 wget http://192.168.0.12/coord/PacketTracer70_64bit_linux.tar.gz -O /tmp/PacketTracer70_64bit_linux.tar.gz
