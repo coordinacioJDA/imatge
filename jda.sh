@@ -1,19 +1,24 @@
 #Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
 echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
+#Dóna accés denegat
 
 #Simple Screen Recorder
 add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
-
+apt update
 #Cal en Ubuntu 18.04??
 apt-get -y purge aisleriot gnome-sudoku gnome-mines gnome-mahjongg
 
 apt-get install -y  wireshark audacity lame libmp3lame0 blender p7zip-full p7zip-rar
+#wireshark pregunta si usuaris nonsudo poden capturar paquets ..resposta es yes pero ja no és silent
 apt-get install -y  codeblocks dia epoptes-client fritzing dmidecode libxml-simple-perl libcompress-raw-zlib-perl 
 apt-get install -y  libnet-ip-perl libwww-perl libdigest-md5-perl libnet-ssleay-perl  libcrypt-ssleay-perl libnet-snmp-perl libproc-pid-file-perl libproc-daemon-perl
 apt-get install -y  net-tools libsys-syslog-perl pciutils smartmontools read-edid nmap  geany gimp
-apt-get install -y  inkscape keymon mingw32 nmap shutter vim-gnome rst2pdf scribus ntp
+#postfix configuration demana quin correu usar local o internet
+apt-get install -y  inkscape keymon mingw32 nmap shutter vim-gnome rst2pdf scribus ntp traceroute
+#ningw32 no troba
 apt-get install -y  python-virtualenv byobu virtualbox git kdenlive kexi python-pip vim docutils-common
+###FINS AQUí PROVAT
 
 ##PacketTracer
 wget http://192.168.0.12/coord/PacketTracer70_64bit_linux.tar.gz -O /tmp/PacketTracer70_64bit_linux.tar.gz
