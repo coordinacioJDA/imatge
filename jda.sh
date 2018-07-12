@@ -15,7 +15,7 @@ apt-get install -y  codeblocks dia epoptes-client fritzing dmidecode libxml-simp
 apt-get install -y  libnet-ip-perl libwww-perl libdigest-md5-perl libnet-ssleay-perl  libcrypt-ssleay-perl libnet-snmp-perl libproc-pid-file-perl libproc-daemon-perl
 apt-get install -y  net-tools libsys-syslog-perl pciutils smartmontools read-edid nmap  geany gimp
 #postfix configuration demana quin correu usar local o internet
-apt-get install -y  inkscape keymon mingw-w64 nmap shutter vim-gnome rst2pdf scribus ntp traceroute
+apt-get install -y  inkscape keymon nmap shutter vim-gnome rst2pdf scribus ntp traceroute
 apt-get install -y  python-virtualenv byobu virtualbox git kdenlive kexi python-pip vim docutils-common
 ###FINS AQUí PROVAT
 
@@ -35,8 +35,6 @@ wget https://goo.gl/oGuAxQ -O state.xml
 wget http://download.netbeans.org/netbeans/8.0.2/final/bundles/netbeans-8.0.2-linux.sh -O netbeans.sh
 chmod a+x netbeans.sh
 ./netbeans.sh --silent --state state.xml
-
-
 
 ## chrome (2017)
 apt-get install -y google-chrome-stable 
@@ -60,11 +58,8 @@ dpkg -i /tmp/vagrant_1.8.5_x86_64.deb
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo apt-get -y install sublime-text-installer
 
-
-
 ## cron
 echo "15 22 * * * /sbin/shutdown -h now" >> /var/spool/cron/crontabs/root
-
 
 ##post: neteja
 apt-get clean | tee -a ${LOG}
